@@ -125,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
+
   font-size: 32px;
   margin: 0;
   padding: 0;
@@ -136,10 +137,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo a {
   color: #fff;
+  
 }
 
 #header .logo img {
-  max-height: 40px;
+  /*max-height: 40px;*/
+  margin-left: 250px !important;
 }
 
 @media (max-width: 992px) {
