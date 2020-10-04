@@ -29,8 +29,20 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  
+  <!---manifest for pwa-->
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-----manifest end-->
+  <!----service worker-->
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+    </script>
+    <!---service worker end-->
   
 </head>
 
